@@ -1,6 +1,6 @@
 #Requires AutoHotKey v2.0.18+
 
-^space::
+!space::
 {
     WinSetAlwaysOnTop -1, "A"
 }
