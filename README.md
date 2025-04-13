@@ -1,6 +1,10 @@
 # KeyRemapping
 This repository is a collection of various keyboard remapping scripts for Windows and Linux. Any files that end in .ahk are AutoHotkey scripts that depend on AutoHotkey v2. 
 
+The main branch includes scripts that currently work and are in use on my Windows laptop.
+
+The testing branch includes testing scripts that were used when first getting scripts working, saved for posterity.
+
 ## Remapping Keys/Keyboard Shortcuts
 
 CapsLock_Remap2 remaps CapsLock to Escape when pressed and released, and to Control when pressed in conjunction with any other input, keyboard or mouse. Note that this appears not to work when on higher level permissions, likely where the keyboard input is redirected before the script takes effect. As far as I know, this is whatever requires administrator access, such as a command prompt run as administrator or a game where the anti-cheat requires administrator access.
