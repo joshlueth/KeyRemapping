@@ -23,6 +23,14 @@ In order to run scripts on computer activation, create a shortcut and place it i
 
 The scripts will have separate icons visible in the system tray (the up arrow to the left of the WiFi-Volume-Battery icons that expanded into an icon menu). By right-clicking on the icons, the scripts can be reloaded, exited, paused, or other options.
 
+## On other systems:
+
+For Always-On-Top, the command-line can be used to toggle a window on top. Assign
+wmctrl -r :ACTIVE: -b toggle,above
+to the desired keyboard shortcut either in some variant of AutoHotKey or AutoKey, or by using the default setting of custom keyboard shortcuts.
+
+For switching the Caps Lock to Escape when pressed alone and Control when in conjunction with any other key, some utilities to potentially use, again beyond the typical AutoHotKey and AutoKey, are xcape, setxkbmap, and xmodmap. The method used is attached with the script CapsLock_Remap_X11.ahk.
+
 ### Last Updated:
 Joshua Lueth
-2/10/2025
+4/11/2025
