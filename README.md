@@ -29,8 +29,12 @@ For Always-On-Top, the command-line can be used to toggle a window on top. Assig
 wmctrl -r :ACTIVE: -b toggle,above
 to the desired keyboard shortcut either in some variant of AutoHotKey or AutoKey, or by using the default setting of custom keyboard shortcuts.
 
-For switching the Caps Lock to Escape when pressed alone and Control when in conjunction with any other key, some utilities to potentially use, again beyond the typical AutoHotKey and AutoKey, are xcape, setxkbmap, and xmodmap. The method used is attached with the script CapsLock_Remap_X11.ahk.
+For switching the Caps Lock to Escape when pressed alone and Control when in conjunction with any other key, some utilities to potentially use, again beyond the typical AutoHotKey and AutoKey, are xcape, setxkbmap, and xmodmap.
+
+The method used is with setxkbmap and xcape. Install xcape from https://github.com/alols/xcape, and then add the following to the startup script (likely .bashrc or .cshrc, or potentially .profile)
+setxkbmap -option 'caps:ctrl_modifier'
+xcape -e 'Caps_Lock=Escape' [-t 100]
 
 ### Last Updated:
 Joshua Lueth
-4/11/2025
+4/14/2025
