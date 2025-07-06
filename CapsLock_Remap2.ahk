@@ -9,3 +9,4 @@
     else if GetKeyState('Control') && !GetKeyState('Control', 'P')
         Send('{Blind}{Ctrl Up}')
 }
+*Escape::CapsLock
