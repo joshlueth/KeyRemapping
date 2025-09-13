@@ -25,15 +25,15 @@ The scripts will have separate icons visible in the system tray (the up arrow to
 
 ## On other systems:
 
-For Always-On-Top, the command-line can be used to toggle a window on top. Assign
-wmctrl -r :ACTIVE: -b toggle,above
-to the desired keyboard shortcut either in some variant of AutoHotKey or AutoKey, or by using the default setting of custom keyboard shortcuts.
+For Always-On-Top, the command-line can be used to toggle a window on top. Assign <code>wmctrl -r :ACTIVE: -b toggle,above</code> to the desired keyboard shortcut either in some variant of AutoHotKey or AutoKey, or by using the default setting of custom keyboard shortcuts.
 
 For switching the Caps Lock to Escape when pressed alone and Control when in conjunction with any other key, some utilities to potentially use, again beyond the typical AutoHotKey and AutoKey, are xcape, setxkbmap, and xmodmap.
 
-The method used is with setxkbmap and xcape. Install xcape from https://github.com/alols/xcape, and then add the following to the startup script (likely .bashrc or .cshrc, or potentially .profile)
-setxkbmap -option 'caps:ctrl_modifier'
-xcape -e 'Caps_Lock=Escape' [-t 100]
+The method used is with setxkbmap and xcape. Install xcape from https://github.com/alols/xcape, and then add the following to the startup script (likely .bashrc or .cshrc, or potentially .profile. Currently this lives in .login).
+
+<code>setxkbmap -option 'caps:ctrl_modifier'</code>\
+<code>xcape -e 'Caps_Lock=Escape'</code>
+
 
 ### Last Updated:
 Joshua Lueth
